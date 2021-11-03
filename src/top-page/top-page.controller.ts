@@ -5,8 +5,7 @@ import { TopPageModel } from './top-page.model';
 
 @Controller('top-page')
 export class TopPageController {
-    constructor(private readonly configService: ConfigService) {}
-
+    
     @Post('create')
     async create(@Body() dto: Omit<TopPageModel, '_id'>) {
 
@@ -14,7 +13,7 @@ export class TopPageController {
 
     @Get(':id')
     async get(@Param('id') id: string) {
-        this.configService.get('TEST')
+        
     }
 
     @Delete(':id')
