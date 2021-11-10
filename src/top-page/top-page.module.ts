@@ -9,7 +9,7 @@ import { TopPageModel } from './top-page.model';
       {
         typegooseClass: TopPageModel,
         schemaOptions: {
-          collection: 'Review'
+          collection: 'TopPage'
         }
       }
     ])
